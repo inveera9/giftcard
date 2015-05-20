@@ -1,0 +1,28 @@
+<div id="page-wrapper">
+<div id="page-inner">
+<table class="table table-striped">
+    <thead>
+      <tr>
+         <th>Users Profile</th>
+      </tr>
+     
+    </thead>
+    <tbody>
+        <td>
+       <%= @user.email %>
+      </td>
+      <td>
+       <%= @user.created_at %>
+      </td>
+      <td>
+        <%= link_to 'Edit', edit_admin_path(@user) %>
+      </td>
+
+           
+    </tbody>
+  </table>
+
+
+</div>
+</div>
+</div>

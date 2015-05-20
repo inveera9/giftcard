@@ -1,0 +1,39 @@
+
+<div class="container">
+
+  <div class="row text-center pad-top ">
+     
+    <div class="col-md-12">
+       <h3>Edit User Profile</h3>
+            </div>
+           
+        </div><br>
+
+     <div class="row  pad-top">     
+      <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                        <div class="panel panel-default">
+                            
+                            <div class="panel-body">
+                                <form role="form">
+
+
+
+    <%= form_for @user, method: :put  do |f| %>
+     
+      <%= f.label :email %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <%= f.email_field :email %><br><br>
+    
+
+      <%= f.label :password %>&nbsp;
+      <%= f.password_field :password %>
+      <br><br>
+
+      <%= f.label :password_confirmation, "Confirm" %>&nbsp;&nbsp;&nbsp;&nbsp;
+      <%= f.password_field :password_confirmation %><br><br>
+    
+  
+  <center> <%= f.submit "updte",class:"btn btn-info"%></center>
+
+    <% end %>
+ 
+</div>

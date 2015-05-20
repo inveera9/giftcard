@@ -26,11 +26,20 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+
+  get 'admin/new'
+  get 'user/show'
+  get 'user/index'
+  put 'admin/edit'
+
+  
   devise_scope :user do
     root :to => 'devise/sessions#new'
     get 'users/registrations/newpass'
     put 'users/registrations/update'
+
   end
+  resources :user
   resources :admin
 
   # Example resource route with sub-resources:
