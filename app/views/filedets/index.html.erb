@@ -1,0 +1,5 @@
+<% @file.each do|d|%>
+<%=d.data.url%>
+<%=link_to 'Show' ,filedet_path(d)%>
+<%=link_to 'Delete' ,filedet_path(d) , method: :delete%><br>
+<%end%>

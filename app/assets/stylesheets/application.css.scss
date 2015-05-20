@@ -10,11 +10,20 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require font-awesome
+ *= require jquery.Jcrop
+ *= require jquery.Jcrop.min
+ *= require owl.carousel
+ *= require responsive
+ *= require style
+ *= require formstyle
+ *= require morris
+ *= require custom-styles
  *= require_tree .
  *= require_self
- *= require font-awesome
- *= require morris
+
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'custom-styles'
+@import 'custom-styles';
+

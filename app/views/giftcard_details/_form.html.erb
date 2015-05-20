@@ -1,0 +1,106 @@
+<%= form_for @gift ,:html => { :id => "basicform" ,:name=>"basicform" }  do|f|%>
+
+
+          <!-- id will be unique, but class name will be same -->
+          <div id="sf1" class="frm">
+
+            <fieldset>
+              <legend>Add Image</legend>
+              <div class="form-group">
+
+                <div class="form-group">
+                <label class="col-lg-2 control-label" for="uname">Upload Image: </label>
+               
+                <div class="col-lg-6">
+                   <%= f.file_field :avatar %>
+                </div>
+              </div>
+              </div><br><br>
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <!-- open1 is given in the class that is binded with the click event -->
+                  <button class="btn btn-primary open1" type="button">Next <span class="fa fa-arrow-right"></span></button>
+                </div>
+              </div>
+
+            </fieldset>
+
+          </div>
+
+          <!-- id will be unique, but class name will be same -->
+          <div id="sf2" class="frm">
+
+            <fieldset>
+              <legend>Add Details</legend>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="uname">Gift Value: </label>
+               
+                <div class="col-lg-6">
+                   <%= f.text_field :value , class: "form-control", placeholder: "Enter amount" %>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="uemail">Name on Gift Card: </label>
+                <div class="col-lg-6">
+                  <%= f.text_field :name , class: "form-control", placeholder: "Enter Name" %>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="uemail">Personal Message: </label>
+                <div class="col-lg-6">
+                  <%= f.text_field :message , class: "form-control", placeholder: "Your Message" %>
+                </div>
+              </div>
+
+              <div class="clearfix" style="height: 10px;clear: both;"></div>
+
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <!-- back2 unique class name  -->
+                  <button class="btn btn-warning back2" type="button"><span class="fa fa-arrow-left"></span> Back</button>
+                  <!-- open2 unique class name -->
+                  <button class="btn btn-primary open2" type="button">Next <span class="fa fa-arrow-right"></span></button>
+                </div>
+              </div>
+            </fieldset>
+
+          </div>
+
+          <!-- id will be unique, but class name will be same -->
+          <div id="sf3" class="frm">
+
+            <fieldset>
+              <legend>Review</legend>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="upass1">Password: </label>
+                <div class="col-lg-6">
+                  <input type="password" placeholder="Your Password" id="upass1" name="upass1" class="form-control" autocomplete="off">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="upass1">Confirm Password: </label>
+                <div class="col-lg-6">
+                  <input type="password" placeholder="Confirm Password" id="upass2" name="upass2" class="form-control" autocomplete="off">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <!-- Unique class name -->
+                  <button class="btn btn-warning back3" type="button"><span class="fa fa-arrow-left"></span> Back</button>
+                  <!-- Unique class name -->
+                  <button class="btn btn-primary open3" type="button">Submit </button>
+                  <%=f.submit %>
+                  <img src="spinner.gif" alt="" id="loader" style="display: none">
+                </div>
+              </div>
+            </fieldset>
+
+          </div>
+
+<%end%>

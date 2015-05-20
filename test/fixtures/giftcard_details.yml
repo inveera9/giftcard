@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  value: 1
+  name: MyString
+  message: MyString
+  valid_through: MyString
+  user_id: 
+
+two:
+  value: 1
+  name: MyString
+  message: MyString
+  valid_through: MyString
+  user_id: 

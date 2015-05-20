@@ -1,0 +1,21 @@
+
+
+<style media="screen">
+  .image_div { background-image: url(<%= @gift.avatar %>); }
+</style>
+
+<div class= "image_div" style=" height: 200px; width: 300px; border: 1px solid black;background-size: cover;background-repeat:no-repeat; border-radius: 15px;">
+	<div class="row">
+		<br><br><br><br><br><br><br>
+		<div class="col-xs-12" >
+			
+			<div class="col-xs-7">
+				&nbsp;&nbsp;<%= @gift.name%><br>
+				&nbsp;&nbsp;<%= @gift.message%>
+			</div>
+			<div class="col-xs-5">&nbsp;</div>
+			
+		</div>
+	</div>
+</div>
+<% @gift.message%>
