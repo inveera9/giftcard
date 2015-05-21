@@ -1,5 +1,7 @@
 class GiftcardDetail < ActiveRecord::Base
-	acts_as_sellable
+
+	# acts_as_sellable
+
   	belongs_to :user
   	# attr_accessible :piggybak_sellable_attributes, :value, :name, :message
   	has_attached_file :avatar
@@ -9,4 +11,5 @@ class GiftcardDetail < ActiveRecord::Base
   	# 		label 'Owner of this ball: '
   	# 	end
   	# end
+  	acts_as_sellable
 end
