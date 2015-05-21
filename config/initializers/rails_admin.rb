@@ -27,7 +27,7 @@ RailsAdmin.config do |config|
     delete
     show_in_app
 
-
+end
 config.current_user_method { current_user } # auto-generated
 
   # Set the admin name here (optional second array element will appear in a beautiful RailsAdmin red ©)
@@ -36,11 +36,9 @@ config.current_user_method { current_user } # auto-generated
     ## With an audit adapter, you can add:
     # history_index
     # history_show
-  end
+  
 
   config.model Giftcard do
-
-    edit do
       #other fields  
       # or field :piggybak_sellable
     list do
