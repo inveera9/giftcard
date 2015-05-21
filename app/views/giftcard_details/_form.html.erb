@@ -5,7 +5,7 @@
           <div id="sf1" class="frm">
 
             <fieldset>
-              <legend>Add Image</legend>
+              <legend><h3>Add Image</h3></legend>
               <div class="form-group">
 
                 <div class="form-group">
@@ -31,7 +31,7 @@
           <div id="sf2" class="frm">
 
             <fieldset>
-              <legend>Add Details</legend>
+              <legend><h3>Add Details</h3></legend>
 
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="uname">Gift Value: </label>
@@ -73,29 +73,20 @@
           <div id="sf3" class="frm">
 
             <fieldset>
-              <legend>Review</legend>
+              <legend><h3>Review</h3></legend>
 
               <div class="form-group">
-                <label class="col-lg-2 control-label" for="upass1">Password: </label>
-                <div class="col-lg-6">
-                  <input type="password" placeholder="Your Password" id="upass1" name="upass1" class="form-control" autocomplete="off">
-                </div>
+                <%=f.submit "Quick View"%>
               </div>
 
-              <div class="form-group">
-                <label class="col-lg-2 control-label" for="upass1">Confirm Password: </label>
-                <div class="col-lg-6">
-                  <input type="password" placeholder="Confirm Password" id="upass2" name="upass2" class="form-control" autocomplete="off">
-                </div>
-              </div>
 
               <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
                   <!-- Unique class name -->
                   <button class="btn btn-warning back3" type="button"><span class="fa fa-arrow-left"></span> Back</button>
                   <!-- Unique class name -->
-                  <button class="btn btn-primary open3" type="button">Submit </button>
-                  <%=f.submit %>
+                  <button class="btn btn-primary open3" type="button">Add to Cart </button>
+                  
                   <img src="spinner.gif" alt="" id="loader" style="display: none">
                 </div>
               </div>

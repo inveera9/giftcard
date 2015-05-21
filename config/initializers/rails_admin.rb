@@ -27,8 +27,18 @@ RailsAdmin.config do |config|
     delete
     show_in_app
 
+
+
     ## With an audit adapter, you can add:
     # history_index
     # history_show
+  end
+
+  config.model Giftcard do
+    edit do
+      #other fields
+      include_all_fields
+      # or field :piggybak_sellable
+    end
   end
 end

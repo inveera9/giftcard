@@ -8,7 +8,6 @@ class GiftcardDetailsController < ApplicationController
 	end
 
 	def create
-		byebug
 		@gift = GiftcardDetail.new(card_details)
 		if @gift.save
 			redirect_to @gift
@@ -20,6 +19,10 @@ class GiftcardDetailsController < ApplicationController
 	def show 
 		@gift = GiftcardDetail.find(params[:id])
 	end 
+
+	def contact 
+
+	end
 
 	private 
 
