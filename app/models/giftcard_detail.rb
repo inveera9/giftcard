@@ -1,5 +1,7 @@
 class GiftcardDetail < ActiveRecord::Base
+
 	# acts_as_sellable
+
   	belongs_to :user
   	# attr_accessible :piggybak_sellable_attributes, :value, :name, :message
   	has_attached_file :avatar

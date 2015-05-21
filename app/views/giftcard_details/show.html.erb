@@ -1,6 +1,7 @@
 
 <style media="screen">
-	.image_div { background-image: url(<%= @gift.avatar %>); }
+.image_div { background-image: url(<%= @gift.avatar %>); }
+
 </style>
 
 
@@ -37,10 +38,7 @@
 				</div>
 			</div>
 
-<div id="cart_form">
-	<%= cart_form(@gift.avatar) %>
-</div>	
-			
+	
 			<br><br>
 		</div>
 		<div class="col-xs-5">
@@ -51,4 +49,6 @@
 </div>
 
 
-	
+
+<%= cart_form(@gift) %>
+

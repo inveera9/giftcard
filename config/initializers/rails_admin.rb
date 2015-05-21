@@ -32,19 +32,22 @@ config.current_user_method { current_user } # auto-generated
 
   # Set the admin name here (optional second array element will appear in a beautiful RailsAdmin red ©)
   config.main_app_name = ['Giftcard', 'Admin']
+
     ## With an audit adapter, you can add:
     # history_index
     # history_show
   end
 
   config.model Giftcard do
+
+    edit do
+      #other fields  
+      # or field :piggybak_sellable
     list do
       field :avatar
-      
     end
     edit do
       field :avatar
-     
     end
   end
 end

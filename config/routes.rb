@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   # mount PiggybakBundleDiscounts::Engine => '/giftcard_details', :as => 'piggybak_bundle_discounts'
 
   devise_for :users
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -33,13 +35,33 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-  devise_scope :user do
-    root :to => 'devise/sessions#new'
-    get 'users/registrations/newpass'
-    put 'users/registrations/update'
-  end
-  resources :admin
 
+  # authenticated :user do
+    root 'giftcard_details#index'
+  # end
+
+  # unauthenticated :user do
+    # devise_scope :user do
+    #   get "/" => "devise/sessions#new"
+    # end
+  # end
+
+  # devise_scope :user do
+  #   root :to => 'devise/sessions#new'
+  #   get 'users/registrations/newpass'
+  #   put 'users/registrations/update'
+  # end
+  # resources :admin
+
+  resources :giftcard_details
+  # get 'giftcard_detail#contact'
+  get '/contact' => 'giftcard_details#contact'
+
+  resources :filedets
+
+  resources :filedets do
+      patch :crop, on: :member
+  end
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
