@@ -10,7 +10,7 @@ default: &default
 
   host: localhost
   pool: 5
-  username: inveera 
+  username: inveera
   password: inveera
 
 development:
