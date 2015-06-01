@@ -38,7 +38,7 @@
                             
                               <% if user_signed_in? %>
                                 <li><a href="/users/edit"><i class="fa fa-user"></i> My Account</a></li>
-                                <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>       
+                                      
                               <% else %>
                                 <li><a href="#modal" id="modal_trigger"><i class="fa fa-user"></i> Login</a></li>
                                 <%#= link_to "Sign up", new_user_registration_path %>  <%#= link_to "sign in", new_user_session_path %>

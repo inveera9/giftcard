@@ -26,4 +26,4 @@ test:
 
 production:
   <<: *default
-  database: giftcard
+  database: heroku-postgres-6928768c :: jade
