@@ -26,4 +26,4 @@ test:
 
 production:
   <<: *default
-  database: infinite-fortress-5016
+  database: mygiftapp
