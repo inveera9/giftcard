@@ -26,4 +26,4 @@ test:
 
 production:
   <<: *default
-  database: giftcard
+  database: infinite-fortress-5016
